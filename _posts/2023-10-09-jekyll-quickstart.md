@@ -5,7 +5,7 @@ tags: ["jekyll"]
 ---
 Jekyll은 정적 사이트 생성기입니다. 즐겨찾는 마크업 언어로 작성된 텍스트를 받아 레이아웃을 사용하여 정적 웹사이트를 생성합니다. 사이트의 모양과 느낌, URL, 페이지에 표시되는 데이터 등을 조정할 수 있습니다.
 
-Jekyll 설치 요구사항
+### Jekyll 설치 요구사항
 
 - Ruby version 2.5.0 or higher
 - RubyGems
@@ -39,3 +39,13 @@ cd myblog
 bundle exec jekyll serve
 ```
 6. 브라우저에서 http://localhost:4000 확인
+
+> Ruby 버전 3.0.0 이상을 사용하는 경우 5단계가 실패할 수 있습니다. 의존성에 webrick을 추가하여 수정할 수 있습니다: bundle add webrick
+{: .prompt-warning }
+
+> 원본 파일을 변경할 때마다 페이지를 자동으로 새로 고치는 데 사용할 --livereload 옵션을 전달합니다. bundle exec jekyll serve --livereload {: .prompt-note }
+
+If you encounter any errors during this process, check that you have installed all the prerequisites in Requirements. If you still have issues, see Troubleshooting.
+
+> 설치 방법은 운영 체제에 따라 다릅니다. OS별 지침은 가이드를 참조하십시오.
+https://jekyllrb.com/docs/installation/#guides {: .prompt-note }
