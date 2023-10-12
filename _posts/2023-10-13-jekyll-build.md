@@ -23,4 +23,9 @@ github에 로그인 > Actions > Build and Deploy > Run workfow > Branch:main > R
 <br>
 빌드가 완성되면 gh-pages라는 새로운 브랜치가 만들어진다는데 저는 gh-pages 브랜치가 아니고 main 브랜치에서 작업하고 있습니다.
 <br>
-
+화면을 새로고침하면 update 알림이 뜨고 update 버튼을 누르면 정상적으로 포스트가 적용됩니다.
+![Alt text](/assets/2023-10-13_1.26.43.png)
+<br>
+<br>
+정상적으로 적용된 화면
+![Alt text](/assets/2023-10-13_1.27.02.png)
