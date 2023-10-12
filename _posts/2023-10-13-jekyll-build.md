@@ -4,6 +4,7 @@ date: "2023-10-13 00:31:25"
 tags: ["jekyll"]
 ---
 ### github 블로그 배포 - 화면이 안나올 경우 (jekyll, Chiry)
+![Alt text](/assets/2023-10-13_12.40.55.png)
 <br>
 github 블로그 왜 했을까???? 그냥 네이버나 티스토리로 간단히 글이나 올릴껄 ...
 <br>
@@ -18,6 +19,7 @@ github 블로그 왜 했을까???? 그냥 네이버나 티스토리로 간단히
 <br>
 github에 로그인 > Actions > Build and Deploy > Run workfow > Branch:main > Run workfow 
 <br><br>
+![Alt text](/assets/2023-10-13_12.55.04.png)
 <br>
 빌드가 완성되면 gh-pages라는 새로운 브랜치가 만들어진다는데 저는 gh-pages 브랜치가 아니고 main 브랜치에서 작업하고 있습니다.
 <br>
