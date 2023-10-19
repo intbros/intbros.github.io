@@ -37,29 +37,40 @@ In all other Targets:
 <br>
 
 - Build libraries for distribution => NO
+<br>
 - Only safe API extensions => YES
+<br>
 - iOS Deployment Target => 11 or greater
 <P>
 
 ### Xcode -> Open ios/Runner.xcodeproj -> Runner -> Build Settings -> All
+<br>
 
 ![Alt text](<../assets/2023-10-16_ 12.15.10.png>)
 <br>
 <br>
 
 ### search "Standard Libra...." -> "Yes"
+<br>
+
 ![Alt text](../assets/2023-10-16_12.13.59.png)
 <br>
 <br>
 
 ### search "Distri....." -> "No"
+<br>
+
 ![Alt text](../assets/2023-10-16_12.14.32.png)
 <br>
 <br>
 
 ### Basic 
 - Always Embed Swift Standard Libraries (Yes)
+<br>
+
 - Build Libraries for Distribution (No)
+<br>
+
 - Enable Bitcode (No)
 <br>
 
