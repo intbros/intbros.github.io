@@ -7,6 +7,7 @@ tags: ["flutter"]
 아래 에러는 flutter의 Column안에 ListView를 넣을 때 나오는 에러 입니다.<br>
 제한된 수직공간(Column)에 무제한의 수직공간(ListView)이 들어가니 화면에 다 채울 수 없어 발생하는 에러입니다.
 <br>
+
 ```
 ══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
 The following assertion was thrown during performResize():
@@ -22,6 +23,7 @@ a single scrollable.
 The relevant error-causing widget was:
   ListView .......
 ```
+
 <br>
 아마도 아래와 같은 코드로 작성되었을 것입니다.
 <br>
@@ -40,12 +42,13 @@ Column(children: [
 ])
 ```
 
-
+<br>
 이 문제를 해결하기 위해서는 몇가지 방법을 사용할 수 있습니다.
 <br>
 - ListView에 높이 (SizedBox 이용)를 주어 제한된 수직공간을 만들어 줍니다.
 - ListView의 스크롤을 전체화면으로 보내고 shrinkWrap을 합니다.
 <br>
+
 ```
 //ListView에 높이 (SizedBox 이용)를 주어 제한된 수직공간을 만들어 줍니다.
 
@@ -64,8 +67,9 @@ body: Column(children:[
   ),
 ])
 ```
+
 <br>
-<img src="../assets/2023-10-25_00.37.49.png" width="300" height="500" />
+![Alt text](/assets/2023-10-25_00.37.49.png){: width="50%" height="50%"}
 <br>
 
 ```
@@ -86,4 +90,5 @@ body : SingleChildScrollView(
   ]),
 )
 ```
-<img src="../assets/2023-10-25_00.46.37.png" width="300" height="500" />
+<br>
+![Alt text](/assets/2023-10-25_00.46.37.png){: width="50%" height="50%"}
