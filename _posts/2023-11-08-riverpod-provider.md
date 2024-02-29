@@ -60,3 +60,23 @@ final myProvider = Provider((ref) {
   final value = ref.read(anotherProvider);
 });
 ```
+
+### Notifier provider와 riverpod annotation 비교
+```
+class Test extends Notifier<List<int>> {
+  @override
+  List<int> build() {
+    return [0, 2];
+  }
+
+  void increment() {
+    state = [1, 2];
+  }
+}
+
+@riverpod
+class TestAnnotation extends _$TestAnnotation {
+  @override
+  List<int> build() => [1, 2];
+}
+```
